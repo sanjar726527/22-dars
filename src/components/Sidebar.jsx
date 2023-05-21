@@ -29,81 +29,83 @@ export const Sidebar = () => {
       flex={1}
       position="relative"
       sx={{
-        p: 4,
-        pb: 10,
         display: { xs: "none", sm: "block" },
         background: "#1b1b1b",
+        p: "20px 30px 50px",
       }}
     >
-      <Box textAlign={"center"}>
-        <Avatar
-          sx={{ width: 120, height: 120, margin: "auto" }}
-          src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/profile-img.jpg"
-        />
-        <Typography variant="h3" color={"white"}>
-          Alex Smith
-        </Typography>
-        <Box sx={{ display: "flex", gap: "10px" }} justifyContent={"center"}>
-          <TwitterIcon sx={{ color: grey[500] }} />
-          <FacebookOutlinedIcon sx={{ color: grey[500] }} />
-          <InstagramIcon sx={{ color: grey[500] }} />
+      <Box>
+        <Box textAlign={"center"}>
+          <Avatar
+            sx={{ width: 120, height: 120, margin: "auto" }}
+            src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/profile-img.jpg"
+          />
+          <Typography variant="h3" color={"white"}>
+            Alex Smith
+          </Typography>
+          <Box sx={{ display: "flex", gap: "10px" }} justifyContent={"center"}>
+            <TwitterIcon sx={{ color: grey[500] }} />
+            <FacebookOutlinedIcon sx={{ color: grey[500] }} />
+            <InstagramIcon sx={{ color: grey[500] }} />
+          </Box>
         </Box>
+        <List component="nav" sx={{ color: grey[500] }}>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#home">
+              <ListItemIcon>
+                <HomeOutlined sx={{ color: grey[500] }} />
+              </ListItemIcon>
+              <ListItemText primary="HomePage" />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#friends">
+              <ListItemIcon>
+                <PersonOutlineOutlinedIcon sx={{ color: grey[500] }} />
+              </ListItemIcon>
+              <ListItemText primary="About" />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#resume">
+              <ListItemIcon>
+                <InsertDriveFileOutlinedIcon sx={{ color: grey[500] }} />
+              </ListItemIcon>
+              <ListItemText primary="Resume" />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#portfolio">
+              <ListItemIcon>
+                <BackupTableOutlinedIcon sx={{ color: grey[500] }} />
+              </ListItemIcon>
+              <ListItemText primary="Portfolio" />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#services">
+              <ListItemIcon>
+                <Inventory2OutlinedIcon sx={{ color: grey[500] }} />
+              </ListItemIcon>
+              <ListItemText primary="Services" />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#mode">
+              <ListItemIcon>
+                <ModeNightIcon sx={{ color: grey[500] }} />
+              </ListItemIcon>
+              <Switch color="default" />
+            </ListItemButton>
+          </ListItem>
+        </List>
       </Box>
-      <List component="nav" sx={{ color: grey[500] }}>
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#home">
-            <ListItemIcon>
-              <HomeOutlined sx={{ color: grey[500] }} />
-            </ListItemIcon>
-            <ListItemText primary="HomePage" />
-          </ListItemButton>
-        </ListItem>
 
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#friends">
-            <ListItemIcon>
-              <PersonOutlineOutlinedIcon sx={{ color: grey[500] }} />
-            </ListItemIcon>
-            <ListItemText primary="About" />
-          </ListItemButton>
-        </ListItem>
-
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#resume">
-            <ListItemIcon>
-              <InsertDriveFileOutlinedIcon sx={{ color: grey[500] }} />
-            </ListItemIcon>
-            <ListItemText primary="Resume" />
-          </ListItemButton>
-        </ListItem>
-
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#portfolio">
-            <ListItemIcon>
-              <BackupTableOutlinedIcon sx={{ color: grey[500] }} />
-            </ListItemIcon>
-            <ListItemText primary="Portfolio" />
-          </ListItemButton>
-        </ListItem>
-
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#services">
-            <ListItemIcon>
-              <Inventory2OutlinedIcon sx={{ color: grey[500] }} />
-            </ListItemIcon>
-            <ListItemText primary="Services" />
-          </ListItemButton>
-        </ListItem>
-
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#mode">
-            <ListItemIcon>
-              <ModeNightIcon sx={{ color: grey[500] }} />
-            </ListItemIcon>
-            <Switch color="default" />
-          </ListItemButton>
-        </ListItem>
-      </List>
       <Box
         position="fixed"
         bgcolor={"#333"}
