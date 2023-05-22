@@ -1,10 +1,14 @@
 import { Box } from "@mui/material";
 import React from "react";
+import { About } from "./Feed/About";
+import { Slide } from "react-awesome-reveal";
 
 export const Feed = () => {
   return (
-    <Box bgcolor="pink" flex="4" sx={{ p: 4 }}>
-      Feed
+    <Box width={"100%"} flex="1" color={"black"} bgcolor={"black "}>
+      <Slide delay={500} direction="right">
+        <About />
+      </Slide>
     </Box>
   );
 };
