@@ -2,14 +2,14 @@ import { Box, Stack } from "@mui/material";
 import { Feed } from "./components/Feed";
 import { Sidebar } from "./components/Sidebar";
 import { Navbar } from "./components/Navbar";
-import { Bounce } from "react-awesome-reveal";
+import { Bounce, Slide } from "react-awesome-reveal";
 
 function App() {
   return (
     <Box>
-      <Bounce>
+      <Slide direction="down" duration={500} triggerOnce>
         <Navbar />
-      </Bounce>
+      </Slide>
       <Stack direction={"row"} justifyContent={"space-between"}>
         <Sidebar />
         <Feed />

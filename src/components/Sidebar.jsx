@@ -44,7 +44,7 @@ export const Sidebar = () => {
       }}
     >
       <Slide duration={1500} position={"fixed"}>
-        <Box textAlign={"center"}>
+      <Box textAlign={"center"}>
           <Avatar
             sx={{ width: 120, height: 120, margin: "auto" }}
             src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/profile-img.jpg"
@@ -137,15 +137,17 @@ export const Sidebar = () => {
       <Box
         bgcolor={"#333"}
         position={"fixed"}
-        sx={{ width: "100%", maxWidth: "325px", left: 0, p: 3, top: "92%" }}
+        sx={{ width: "100%", maxWidth: "325px", left: 0, p: 3, top: "88%" }}
         textAlign={"center"}
       >
-        <Box variant="div" color={"white"}>
-          © Copyright <Typography variant="strong">iPortfolio</Typography>
-        </Box>
-        <Box variant="div" color={"white"}>
-          Designed by <Link>BootstrapMade</Link>
-        </Box>
+        <Slide direction="up">
+          <Box variant="div" color={"white"}>
+            © Copyright <Typography variant="strong">iPortfolio</Typography>
+          </Box>
+          <Box variant="div" color={"white"}>
+            Designed by <Link>BootstrapMade</Link>
+          </Box>
+        </Slide>
       </Box>
     </Box>
   );
