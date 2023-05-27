@@ -29,7 +29,6 @@ import { Animated } from "react-animated-css";
 export const Sidebar2 = () => {
   return (
     <Box
-      position={"relative"}
       flex={1}
       sx={{
         display: {
@@ -39,16 +38,20 @@ export const Sidebar2 = () => {
           flexDirection: "column",
         },
         background: "#424242",
-        p: "20px 30px 50px",
-        minHeight: "100vh",
+        p: "84px 30px 50px",
         maxWidth: "300px",
+        position: "fixed",
+        width: "100%",
+        height: "calc(100vh - 128px)",
+        zIndex: "3",
+        top: "0",
+        overflow: "auto",
       }}
     >
       <Animated
         animationIn="bounceInLeft"
         animationOut="fadeOut"
         isVisible={true}
-        position={"fixed"}
       >
         <Box textAlign={"center"}>
           <Avatar
@@ -71,7 +74,7 @@ export const Sidebar2 = () => {
             </Button>
           </Box>
         </Box>
-        <List component="nav" sx={{ color: grey[300] }}>
+        <List component="nav" sx={{ color: grey[300], paddingBottom: "30px" }}>
           <ListItem disablePadding>
             <Animated
               animationIn="bounceInLeft"
@@ -165,8 +168,15 @@ export const Sidebar2 = () => {
       </Animated>
       <Box
         bgcolor={"#333"}
-        position={"fixed"}
-        sx={{ width: "100%", maxWidth: "325px", left: 0, p: 3, top: "88%" }}
+        sx={{
+          position: "fixed",
+          width: "100%",
+          maxWidth: "360px",
+          left: 0,
+          p: "16px 0",
+          bottom: "0",
+          zIndex: "3",
+        }}
         textAlign={"center"}
       >
         <Animated animationIn="slideInUp" animationOut="bounce">

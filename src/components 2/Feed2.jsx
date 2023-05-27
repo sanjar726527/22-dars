@@ -6,7 +6,13 @@ import { Animated } from "react-animated-css";
 
 export const Feed2 = () => {
   return (
-    <Box width={"100%"} flex="1" color={"black"} bgcolor={"black "}>
+    <Box
+      width={"100%"}
+      flex="1"
+      color={"black"}
+      bgcolor={"black"}
+      paddingLeft={"360px"}
+    >
       <Animated
         animationIn="bounceInRight"
         animationOut="fadeOut"

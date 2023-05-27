@@ -6,15 +6,26 @@ import { Animated } from "react-animated-css";
 
 function App() {
   return (
-    <Box>
+    <Box sx={{ position: "relative" }}>
       <Animated
         animationIn="slideInDown"
         animationOut="slideInUp"
         animationInDuration={1000}
+        style={{
+          position: "sticky",
+          top: "0",
+          width: "100%",
+          height: "100%",
+          zIndex: "5",
+        }}
       >
         <Navbar2 />
       </Animated>
-      <Stack direction={"row"} justifyContent={"space-between"}>
+      <Stack
+        sx={{ position: "relative" }}
+        direction={"row"}
+        justifyContent={"space-between"}
+      >
         <Sidebar2 />
         <Feed2 />
       </Stack>
