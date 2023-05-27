@@ -24,19 +24,9 @@ export const About = () => {
       <header>
         <div className="container">
           <h1>
-            <a href="#">Олег Марков</a>
+            <a href="#">Alex Smith</a>
           </h1>
-          <ul>
-            <li>
-              <a href="#main"> Главная</a>
-            </li>
-            <li>
-              <a href="#me">Обо мне</a>
-            </li>
-            <li>
-              <a href="#contact">Связаться</a>
-            </li>
-          </ul>
+         
         </div>
       </header>
       <section id="#">
