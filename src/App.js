@@ -4,6 +4,8 @@ import { Sidebar2 } from "./components 2/Sidebar2";
 import { Feed2 } from "./components 2/Feed2";
 import { Animated } from "react-animated-css";
 
+import "./App.css";
+
 function App() {
   return (
     <Box sx={{ position: "relative" }}>

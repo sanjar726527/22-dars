@@ -1,0 +1,84 @@
+header h1 {
+  font-family: "Marck Script", cursive;
+  font-size: 42px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  text-decoration: none;
+
+  list-style: none;
+}
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+.containerMini {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: start;
+}
+.container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+header ul {
+  font-family: sans-serif;
+
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 20px;
+}
+
+#Asosiy .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 17px;
+}
+
+#Asosiy img {
+  width: 100%;
+}
+
+#Man a {
+  text-decoration: underline;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 10px;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 70%;
+}
+
+form button {
+  width: min-content;
+}

@@ -81,7 +81,7 @@ export const Sidebar2 = () => {
               animationOut="fadeOut"
               isVisible={true}
             >
-              <ListItemButton component="a" href="#home">
+              <ListItemButton component="a" href="#">
                 <ListItemIcon>
                   <HomeOutlined sx={{ color: grey[300] }} />
                 </ListItemIcon>
@@ -96,7 +96,7 @@ export const Sidebar2 = () => {
               animationOut="fadeOut"
               isVisible={true}
             >
-              <ListItemButton component="a" href="#friends">
+              <ListItemButton component="a" href="#me">
                 <ListItemIcon>
                   <PersonOutlineOutlinedIcon sx={{ color: grey[300] }} />
                 </ListItemIcon>
@@ -141,7 +141,7 @@ export const Sidebar2 = () => {
               animationOut="fadeOut"
               isVisible={true}
             >
-              <ListItemButton component="a" href="#services">
+              <ListItemButton component="a" href="#contact">
                 <ListItemIcon>
                   <Inventory2OutlinedIcon sx={{ color: grey[300] }} />
                 </ListItemIcon>

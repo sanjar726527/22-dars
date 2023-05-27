@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
+import { About } from "../components 2/About";
 import React from "react";
-import { About } from "./Feed/About";
 
 import { Animated } from "react-animated-css";
 
